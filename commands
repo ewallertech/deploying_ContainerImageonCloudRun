@@ -1,0 +1,19 @@
+  gcloud config set project Hello
+  mkdir Hello-Nano-Neko
+  ls
+  cd Hello-Nano-Neko/
+  ls
+  cd Hello-Nano-Neko/
+  touch app.py
+  ls
+  nano app.py
+  ls
+  touch Dockerfile
+  ls
+  nano Dockerfile
+  ls
+  chmod +x Dockerfile
+  ls -lrt
+  gcloud builds submit --tag gcr.io/hello-368719/helloNeko
+  gcloud builds submit --tag gcr.io/hello-368719/helloneko
+  gcloud run deploy --image gcr.io/hello-368719/helloneko
